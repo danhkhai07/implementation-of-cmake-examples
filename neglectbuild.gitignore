@@ -1,1 +1,5 @@
-/build/
+#Build output
+**/build/
+
+#IDE files
+**/.vscode/
