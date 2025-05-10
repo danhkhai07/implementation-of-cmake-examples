@@ -1,4 +1,0 @@
-D:/STUDY/software dev/buildtest/01C/build/CMakeFiles/hello_lib.dir
-D:/STUDY/software dev/buildtest/01C/build/CMakeFiles/hello_exe.dir
-D:/STUDY/software dev/buildtest/01C/build/CMakeFiles/ALL_BUILD.dir
-D:/STUDY/software dev/buildtest/01C/build/CMakeFiles/ZERO_CHECK.dir
