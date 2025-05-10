@@ -1,0 +1,10 @@
+^D:\STUDY\SOFTWARE DEV\BUILDTEST\01C\BUILD\CMAKEFILES\5D450FF9C6B23E180D9A48F5FA6764BC\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/STUDY/software dev/buildtest/01C" "-BD:/STUDY/software dev/buildtest/01C/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/STUDY/software dev/buildtest/01C/build/hello_static_lib.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

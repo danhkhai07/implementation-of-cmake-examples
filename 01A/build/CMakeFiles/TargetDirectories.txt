@@ -1,0 +1,3 @@
+D:/STUDY/software dev/buildtest/build/CMakeFiles/hello_cmake.dir
+D:/STUDY/software dev/buildtest/build/CMakeFiles/ALL_BUILD.dir
+D:/STUDY/software dev/buildtest/build/CMakeFiles/ZERO_CHECK.dir

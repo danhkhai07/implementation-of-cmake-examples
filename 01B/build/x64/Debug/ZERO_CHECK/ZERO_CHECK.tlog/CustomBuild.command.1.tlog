@@ -1,0 +1,10 @@
+^D:\STUDY\SOFTWARE DEV\BUILDTEST\01B\BUILD\CMAKEFILES\0019A38B8ECB1B39FC3ED2F51A368C44\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/STUDY/software dev/buildtest/01B" "-BD:/STUDY/software dev/buildtest/01B/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/STUDY/software dev/buildtest/01B/build/hello_headers.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
