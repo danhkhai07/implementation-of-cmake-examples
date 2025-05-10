@@ -3,5 +3,6 @@
 
 void Hello::print()
 {
-    std::cout << "Hello install!";
+    std::cout << "Hello Thinh ngu nhu bo!";
+    return;
 }
