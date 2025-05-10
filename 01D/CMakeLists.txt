@@ -2,8 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 
 project(hello_shared_lib)
 
-add_library(hello_dll
-    SHARED
+add_library(hello_dll SHARED
        src/Hello.cpp
 )
 
