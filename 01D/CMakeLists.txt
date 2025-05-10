@@ -12,11 +12,9 @@ target_include_directories(hello_dll
         ${PROJECT_SOURCE_DIR}/include
 )
 
-add_library(Hello::library ALIAS hello_dll)
-
 add_executable(hello_exe src/main.cpp)
 
 target_link_libraries(hello_exe
     PRIVATE
-        Hello::library
+        hello_dll
 )
