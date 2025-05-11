@@ -22,16 +22,16 @@ target_link_libraries(hello PRIVATE lib)
 ############################################################
 
 # install executable
-install(TARGET hello
+install(TARGETS hello
     DESTINATION bin)
 
 # install libraries
-install(TARGET lib
+install(TARGETS lib
     EXPORT HelloThinhLibrary
     LIBRARY DESTINATION lib)
 
 # install headers
-install(DIRECTORIES ${PROJECT_SOURCE_DIR}/include
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/include
     DESTINATION include)
 
 # install config or other extra files
