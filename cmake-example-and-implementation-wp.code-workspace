@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "buildtest",
+			"path": "."
+		},
+		{
+			"name": "cmake-examples-master",
+			"path": "../OUTSOURCED MATERIAL/cmake-examples-master"
+		}
+	],
+	"settings": {}
+}

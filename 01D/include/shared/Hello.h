@@ -3,5 +3,5 @@
 class Hello
 {
     public:
-        void print();
+        __declspec(dllexport) void print();
 };
