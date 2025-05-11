@@ -9,5 +9,10 @@
 			"path": "../OUTSOURCED MATERIAL/cmake-examples-master"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"*.txt": "cmake",
+			"iostream": "cpp"
+		}
+	}
 }
