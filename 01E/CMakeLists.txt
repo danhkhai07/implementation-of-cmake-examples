@@ -1,6 +1,14 @@
 cmake_minimum_required(VERSION 3.5..4.0)
 project(hello_install)
 
+set(CMAKE_CXX_STANDARD 11)
+
+# Change install prefix
+if( CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT )
+  message(STATUS "Setting default CMAKE_INSTALL_PREFIX path to ${CMAKE_BINARY_DIR}/install")
+  set(CMAKE_INSTALL_PREFIX "${CMAKE_BINARY_DIR}/install" CACHE STRING "The path to use for make install" FORCE)
+endif()
+
 ############################################################
 # Create a library
 ############################################################
@@ -21,14 +29,16 @@ target_link_libraries(hello PRIVATE lib)
 # Install
 ############################################################
 
-# install executable
-install(TARGETS hello
-    DESTINATION bin)
-
 # install libraries
 install(TARGETS lib
-    EXPORT HelloThinhLibrary
-    LIBRARY DESTINATION lib)
+    RUNTIME DESTINATION bin
+    LIBRARY DESTINATION lib
+    ARCHIVE DESTINATION lib)
+    
+# install executable
+install(TARGETS hello
+    RUNTIME DESTINATION bin)
+
 
 # install headers
 install(DIRECTORY ${PROJECT_SOURCE_DIR}/include
