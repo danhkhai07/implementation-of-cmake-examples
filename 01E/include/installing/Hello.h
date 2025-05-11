@@ -1,7 +1,8 @@
+#include "export/hello_export.h"
 #pragma once
 
 class Hello
 {
 public:
-    __declspec(dllexport) void print();
+    HELLOAPI void print();
 };

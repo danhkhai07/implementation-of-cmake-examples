@@ -16,6 +16,9 @@ endif()
 # setup libs
 add_library(lib SHARED src/hello.cpp)
 target_include_directories(lib PUBLIC ${PROJECT_SOURCE_DIR}/include)
+target_compile_definitions(lib PRIVATE HELLOLIBRARY_EXPORTS)
+# setup hello_export.h
+add_library(export INTERFACE include/export/hello_export.h)
 
 ############################################################
 # Create an executable
@@ -23,6 +26,7 @@ target_include_directories(lib PUBLIC ${PROJECT_SOURCE_DIR}/include)
 
 # add executable
 add_executable(hello src/main.cpp)
+target_link_libraries(lib PUBLIC export)
 target_link_libraries(hello PRIVATE lib)
 
 ############################################################
