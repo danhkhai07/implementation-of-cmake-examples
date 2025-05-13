@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main(){
-    // fmt::print(fg(fmt::color::steel_blue) | fmt::emphasis::italic, "你好{}！\n", "世界");
+    fmt::print(fg(fmt::color::steel_blue), "Hello{}！\n", "world");
     std::cin.get();
     return 0;
 }
