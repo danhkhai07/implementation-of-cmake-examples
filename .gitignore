@@ -64,3 +64,4 @@ install_manifest.txt
 .vscode
 
 cmake-example-and-implementation-wp.code-workspace
+installs/
