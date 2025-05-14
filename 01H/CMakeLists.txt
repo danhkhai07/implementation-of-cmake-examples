@@ -7,7 +7,6 @@ message(STATUS "Setting default CMAKE_INSTALL_PREFIX path to ${CMAKE_SOURCE_DIR}
 set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/installs" CACHE STRING "The path to use for make install" FORCE)
 endif()
 
-# add_subdirectory(cmake/fmt-master EXCLUDE_FROM_ALL)
 find_package(fmt REQUIRED CONFIG)
 
 add_executable(hello main.cpp)
