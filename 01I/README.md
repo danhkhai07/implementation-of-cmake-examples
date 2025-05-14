@@ -1,0 +1,1 @@
+For the sake of storage and time, I will skip this lesson as I don't want to install another compiler just to see it able run on CMake then uninstall it later.
