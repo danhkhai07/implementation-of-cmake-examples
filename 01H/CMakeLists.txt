@@ -9,13 +9,19 @@ endif()
 
 # add_subdirectory(cmake/fmt-master EXCLUDE_FROM_ALL)
 find_package(fmt REQUIRED CONFIG)
-include_directories(${CMAKE_SOURCE_DIR}/cmake/FMT/include)
 
 add_executable(hello main.cpp)
+# target_include_directories(hello PRIVATE ${CMAKE_SOURCE_DIR}/cmake/FMT/include)
 
 target_link_libraries(hello PRIVATE fmt::fmt)
 
 #install
 install(TARGETS hello
     RUNTIME DESTINATION bin
+    LIBRARY DESTINATION lib
+    ARCHIVE DESTINATION lib
+)
+
+install(DIRECTORY cmake/FMT/include/
+    DESTINATION include
 )
