@@ -1,6 +1,6 @@
 #include <iostream>
 
 int main(){
-    std::cout<< "Built with Ninja!";
+    std::cout<< "...";
     return 0;
 }
