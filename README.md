@@ -4,3 +4,4 @@ Done on the backbone of this repo: https://github.com/ttroy50/cmake-examples/tre
 
 LOGS:
 10/05/2025: Project started
+14/05/2025: Paused for pragmatic projects
